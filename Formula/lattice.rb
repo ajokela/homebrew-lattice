@@ -18,6 +18,9 @@ class Lattice < Formula
     if Hardware::CPU.arm?
       url "https://lattice-lang.org/releases/v0.3.28/clat-linux-aarch64"
       sha256 "137aabffba910814f6afa4196f05ca0cb5ae93b244b6818804dc2b39a58eed85"
+    elsif Hardware::CPU.type == :riscv64
+      url "https://lattice-lang.org/releases/v0.3.28/clat-linux-riscv64"
+      sha256 "3eff0adde07ea23bf9a56f4aabf976a70395ac4a8473fd967e54e4aa39b8c294"
     else
       url "https://lattice-lang.org/releases/v0.3.28/clat-linux-x86_64"
       sha256 "ef99b91047d34242253f8be18904675f05f409afd42b3ba4815b2fef3b638d7a"
