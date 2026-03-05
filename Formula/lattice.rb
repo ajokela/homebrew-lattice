@@ -29,6 +29,6 @@ class Lattice < Formula
   end
 
   test do
-    assert_match "Lattice v#{version}", shell_output("#{bin}/clat --version")
+    assert_match "Hello", shell_output("echo 'print(\"Hello\")' | #{bin}/clat")
   end
 end
